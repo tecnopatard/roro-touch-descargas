@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Descargar Roro Touch</title>
+<link rel="icon" href="icono.png">
+<style>
+  :root {
+    --fondo: #f6f5f2; --papel: #ffffff; --texto: #1d1c1a; --texto2: #5f5c56; --linea: #e3e0da;
+    --acento: #1f6feb; --acento-texto: #ffffff; --verde: #1a7f37; --naranja: #b35900; --codigo: #f0eee9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #161514; --papel: #1f1e1c; --texto: #ecebe8; --texto2: #a9a59e; --linea: #34322f;
+      --acento: #4c8dff; --acento-texto: #ffffff; --verde: #56d364; --naranja: #f0a35a; --codigo: #2a2926;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fondo); color: var(--texto);
+         font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; gap: 18px; align-items: center; margin-bottom: 24px; }
+  header img { width: 72px; height: 72px; flex: none; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+  .sub { color: var(--texto2); margin: 4px 0 0; }
+  section { background: var(--papel); border: 1px solid var(--linea); border-radius: 12px; padding: 20px 22px; margin: 0 0 16px; }
+  h2 { font-size: 19px; margin: 0 0 12px; display: flex; gap: 10px; align-items: baseline; }
+  h2 .n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--acento); color: var(--acento-texto);
+          font-size: 14px; display: inline-grid; place-items: center; transform: translateY(-2px); }
+  h3 { font-size: 16px; margin: 16px 0 6px; }
+  p { margin: 0 0 8px; }
+  ol, ul { margin: 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+  b { font-weight: 600; }
+  kbd, code { font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--codigo);
+              border: 1px solid var(--linea); border-radius: 5px; padding: 1px 6px; }
+  pre { margin: 8px 0; padding: 10px 12px; background: var(--codigo); border: 1px solid var(--linea); border-radius: 8px;
+        overflow-x: auto; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre; }
+  pre code { border: 0; padding: 0; background: none; }
+  .nota { margin: 12px 0 0; padding: 10px 12px; border-radius: 8px; background: var(--codigo); color: var(--texto2); font-size: 14px; }
+  .nota b { color: var(--texto); }
+
+  .descarga { display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: center; }
+  .boton { display: inline-flex; align-items: center; gap: 10px; background: var(--acento); color: var(--acento-texto);
+           text-decoration: none; font-weight: 600; font-size: 17px; padding: 13px 22px; border-radius: 10px; }
+  .boton:hover { filter: brightness(1.08); }
+  .boton:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
+  .boton svg { width: 20px; height: 20px; flex: none; }
+  .datos { margin: 0; color: var(--texto2); font-size: 15px; }
+  .datos b { color: var(--texto); }
+  .requisitos { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--linea); color: var(--texto2); font-size: 14px; }
+  .aviso { border-left: 4px solid var(--naranja); }
+  details { background: var(--papel); border: 1px solid var(--linea); border-radius: 12px; padding: 0 22px; margin: 24px 0 0; }
+  summary { cursor: pointer; padding: 16px 0; font-weight: 600; }
+  details[open] { padding-bottom: 18px; }
+  footer { color: var(--texto2); font-size: 13px; margin-top: 28px; text-align: center; }
+  a { color: var(--acento); }
+  @media (max-width: 520px) {
+    main { padding-top: 24px; }
+    h1 { font-size: 25px; } header img { width: 56px; height: 56px; }
+    section { padding: 16px; } details { padding: 0 16px; }
+    .boton { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icono.png" alt="">
+    <div>
+      <h1>Descargar Roro Touch</h1>
+      <p class="sub">Lesky Estudio · app de selección, revelado y retoque para Mac.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="n">1</span>Descargar</h2>
+    <div class="descarga">
+      <a class="boton" id="boton" href="https://github.com/tecnopatard/roro-touch-descargas/releases/latest/download/Roro-Touch-Instalador.dmg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Descargar instalador
+      </a>
+      <p class="datos" id="datos">Versión más reciente · <a href="https://github.com/tecnopatard/roro-touch-descargas/releases">ver todas</a></p>
+    </div>
+    <p class="requisitos">Necesitas una Mac con chip <b>Apple (M1 o más nuevo)</b> y <b>macOS 14 Sonoma</b> o más nuevo. No funciona en Mac con Intel.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>Instalar</h2>
+    <ol>
+      <li>Abre la carpeta <b>Descargas</b> y haz doble clic en <b>Roro-Touch-Instalador.dmg</b>.</li>
+      <li>En la ventana que se abre, arrastra <b>Roro Touch</b> sobre la carpeta <b>Aplicaciones</b>.</li>
+      <li>Si pregunta, elige <b>Reemplazar</b>. Tus ajustes y la llave de Lesky se quedan.</li>
+      <li>Expulsa el instalador: clic derecho sobre «Roro Touch» en el escritorio → <b>Expulsar</b>.</li>
+    </ol>
+    <p class="nota">Los modelos de IA ya vienen dentro de la app. No hay que instalar nada más.</p>
+  </section>
+
+  <section class="aviso">
+    <h2><span class="n">3</span>Abrirla la primera vez</h2>
+    <p>macOS avisa porque la app es de Lesky Estudio y no de la App Store. Es normal y se hace <b>una sola vez</b>.</p>
+    <ol>
+      <li>Abre <b>Aplicaciones</b> y haz doble clic en <b>Roro Touch</b>.</li>
+      <li>Sale un aviso: Apple no pudo verificar la app, o es de un desarrollador no identificado. Toca <b>Aceptar</b> (o <b>Listo</b>). <b>No</b> toques «Trasladar a la papelera».</li>
+      <li>Abre <b> → Ajustes del Sistema → Privacidad y seguridad</b>.</li>
+      <li>Baja hasta <b>Seguridad</b>. Junto al aviso de que se bloqueó Roro Touch, toca <b>Abrir igualmente</b>.</li>
+      <li>Pon la contraseña de la Mac y toca <b>Abrir igualmente</b> otra vez. Listo: ya abre siempre.</li>
+    </ol>
+    <h3>¿Tu Mac tiene macOS 14 Sonoma?</h3>
+    <p>Ahí es más corto: clic derecho sobre Roro Touch → <b>Abrir</b> → <b>Abrir</b>.</p>
+    <h3>¿No aparece «Abrir igualmente» o dice que la app «está dañada»?</h3>
+    <p>Abre la app <b>Terminal</b>, pega esta línea y presiona <kbd>Enter</kbd>. Después abre Roro Touch normal.</p>
+    <pre><code>xattr -dr com.apple.quarantine "/Applications/Roro Touch.app"</code></pre>
+    <p class="nota">La primera vez que se conecte a Lesky, el Llavero pide permiso. Elige <b>Permitir siempre</b>. Las versiones nuevas no vuelven a preguntar.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Conectar con Lesky</h2>
+    <p>Cada Mac lleva su propia llave de Lesky. Los pasos están en <b>«Cómo instalar»</b>, dentro de la ventana del instalador (pasos 3 a 5):</p>
+    <ol>
+      <li>Crear la llave de esa Mac en Lesky.</li>
+      <li>Pegarla en Roro Touch: <b>Ajustes</b> (<kbd>⌘</kbd> <kbd>,</kbd>) → Cola Lesky → <b>Pegar otra clave…</b></li>
+      <li>Tocar <b>Probar conexión</b>. Debe decir <b style="color:var(--verde)">Conectada a Lesky ✓</b>.</li>
+    </ol>
+  </section>
+
+  <details>
+    <summary>Para el dueño: publicar una versión nueva</summary>
+    <p>Se hace en la iMac que arma Roro Touch. Necesita el certificado «Lesky Estudio» en el Llavero y <code>gh</code> con sesión iniciada.</p>
+    <ol>
+      <li>Ten <code>main</code> de Roro Touch con los cambios que quieres entregar.</li>
+      <li>Abre Terminal y corre:
+        <pre><code>~/Proyectos/roro-touch-descargas/publicar.sh</code></pre>
+      </li>
+      <li>El script arma el instalador desde <code>main</code>, revisa que sea la app del estudio, firmada y para chip Apple, y lo sube como versión nueva.</li>
+      <li>Esta página muestra la versión nueva sola en un minuto. El botón siempre baja la última.</li>
+    </ol>
+    <h3>Opciones</h3>
+    <ul>
+      <li><code>publicar.sh --sin-armar</code> sube el instalador que ya está en <code>dist/</code>, sin volver a compilar.</li>
+      <li><code>publicar.sh "Qué cambió"</code> agrega una nota a la versión.</li>
+    </ul>
+    <p class="nota">Cada versión queda guardada en <a href="https://github.com/tecnopatard/roro-touch-descargas/releases">Versiones</a>. Para volver a una anterior, descarga su .dmg desde ahí.</p>
+  </details>
+
+  <footer>Roro Touch · Lesky Estudio</footer>
+</main>
+
+<script>
+  // Lee la última versión publicada (API pública de GitHub). Si falla, el botón igual baja la última.
+  (async () => {
+    const datos = document.getElementById('datos');
+    try {
+      const r = await fetch('https://api.github.com/repos/tecnopatard/roro-touch-descargas/releases/latest',
+                            { headers: { Accept: 'application/vnd.github+json' } });
+      if (!r.ok) return;
+      const v = await r.json();
+      const dmg = (v.assets || []).find(a => a.name.endsWith('.dmg'));
+      const fecha = new Intl.DateTimeFormat('es-419', { dateStyle: 'long' }).format(new Date(v.published_at));
+      const nombre = (v.name || v.tag_name).replace(/^Roro Touch\s*/, '');
+      const mb = dmg ? ' · ' + Math.round(dmg.size / 1e6) + ' MB' : '';
+      datos.innerHTML = '';
+      const b = document.createElement('b');
+      b.textContent = 'Versión ' + nombre;
+      datos.append(b, ' · ' + fecha + mb + ' · ');
+      const a = document.createElement('a');
+      a.href = 'https://github.com/tecnopatard/roro-touch-descargas/releases';
+      a.textContent = 'ver todas';
+      datos.append(a);
+      if (dmg) document.getElementById('boton').href = dmg.browser_download_url;
+    } catch (e) { /* sin internet o límite de la API: queda el texto genérico */ }
+  })();
+</script>
+</body>
+</html>
